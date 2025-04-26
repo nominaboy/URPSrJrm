@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: JRMAdvancedCloud
+  m_Shader: {fileID: 4800000, guid: cbe60a2c3bdcc0645b4606eb51f33162, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudMap:
+        m_Texture: {fileID: 2800000, guid: d054bc80cb5e4874f956774dab3c5997, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _IrradianceMap:
+        m_Texture: {fileID: 2800000, guid: a490c6bad1f27224aaa175ab8aff0121, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: b18b7ff00f7acce449004d7cf0edb771, type: 3}
+        m_Scale: {x: 4, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _CloudGatherFactor: 0.5
+    - _CloudMoreBright: 0.45
+    - _CloudSDFThreshold: 0.31
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DisturbanceNoiseOffset: 262.33862
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _IrradianceMapG_maxAngleRange: 0.3
+    - _IrradianceMapR_maxAngleRange: 0.2
+    - _LDotV_damping_factor_cloud: 0.0881
+    - _MainColorSunGatherFactor: 0.5192639
+    - _Metallic: 0
+    - _MieScatterAngle: 0.5
+    - _MoonIntensity: 0.5
+    - _MoonIntensityMax: 0.19794
+    - _MoonTransmission: 8.36
+    - _Moon_intensity_max: 0.19794
+    - _Moon_intensity_slider: 0.5
+    - _NoiseScale: 0.015
+    - _NoiseSpeed: 0.2
+    - _OcclusionStrength: 1
+    - _Parallax: 0.005
+    - _QueueOffset: 0
+    - _RayleighScatterAngle: 0.2
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _SunAdditionIntensity: 1.385961
+    - _SunColorIntensity: 6
+    - _SunScatterPower: 45
+    - _SunTransmission: 3.07
+    - _Sun_color_intensity: 1.52
+    - _Sun_disk_power_999: 1000
+    - _Surface: 0
+    - _TransmissionLDotVStartAt: 1
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CloudColor_Bright_Around: {r: 0.56078434, g: 0.7764706, b: 0.9411765, a: 1}
+    - _CloudColor_Bright_Center: {r: 0.60784316, g: 0.7647059, b: 0.84705883, a: 1}
+    - _CloudColor_Dark_Around: {r: 0.023529412, g: 0.23921569, b: 0.4509804, a: 1}
+    - _CloudColor_Dark_Center: {r: 0.09411765, g: 0.35686275, b: 0.57254905, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DownPartSkyColor: {r: 0.05490196, g: 0.09803922, b: 0.20784314, a: 1}
+    - _DownPartSunColor: {r: 0.05490196, g: 0.09803922, b: 0.20784314, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FarBrightCloudColor: {r: 0.1254902, g: 0.2901961, b: 0.49019608, a: 1}
+    - _FarDarkCloudColor: {r: 0.023529412, g: 0.05882353, b: 0.14509805, a: 1}
+    - _MoonDir: {r: 0, g: 0, b: 0, a: 1}
+    - _MoonShineColor: {r: 0.078431375, g: 0.08627451, b: 0.101960786, a: 1}
+    - _Moon_shine_color: {r: 0.078431375, g: 0.08627451, b: 0.101960786, a: 1}
+    - _NearBrightCloudColor: {r: 0, g: 0.14117648, b: 0.33333334, a: 1}
+    - _NearDarkCloudColor: {r: 0, g: 0.03529412, b: 0.12156863, a: 1}
+    - _RoleViewPos: {r: 0, g: -200, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SunAdditionColor: {r: 0.4509804, g: 0.8156863, b: 1, a: 1}
+    - _SunColor: {r: 0.019607844, g: 0.007843138, b: 0.019607844, a: 1}
+    - _SunDir: {r: 1, g: 1, b: 1, a: 1}
+    - _SunShineColor: {r: 0.019607844, g: 0.007843138, b: 0.019607844, a: 1}
+    - _Sun_color: {r: 0.7254902, g: 0.7254902, b: 0.654902, a: 1}
+    - _Sun_shine_color: {r: 1, g: 0.81960785, b: 0.43137255, a: 1}
+    - _UpPartSkyColor: {r: 0.007843138, g: 0.023529412, b: 0.05882353, a: 1}
+    - _UpPartSunColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &2456989495883506388
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
