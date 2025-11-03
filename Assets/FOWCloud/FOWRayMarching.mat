@@ -109,10 +109,10 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _CloudBottom: 5
+    - _CloudBottom: 10.3
     - _CloudHeight: 25
     - _CloudIntensity: 5.53
-    - _CloudTop: 25
+    - _CloudTop: 26.77
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1

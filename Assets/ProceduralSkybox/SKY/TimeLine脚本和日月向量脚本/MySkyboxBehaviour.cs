@@ -4,7 +4,7 @@ using UnityEngine.Playables;
 
 public class MySkyboxBehaviour : PlayableBehaviour
 {
-    public List<MaterialProperty> properties;
+    public List<JRMMaterialProperty> properties;
 
    public override void ProcessFrame(Playable playable, FrameData info, object playerData)
 {
@@ -17,12 +17,12 @@ public class MySkyboxBehaviour : PlayableBehaviour
     
     foreach(var property in properties) // 遍历所有属性
     {
-        if(property.type == MaterialProperty.PropertyType.Float) // 如果是float类型
+        if(property.type == JRMMaterialProperty.PropertyType.Float) // 如果是float类型
         {
             float value = property.curve.Evaluate(t);
             material.SetFloat(property.propertyName, value);
         }
-        else if(property.type == MaterialProperty.PropertyType.Color) // 如果是color类型
+        else if(property.type == JRMMaterialProperty.PropertyType.Color) // 如果是color类型
         {
             Color color = property.gradient.Evaluate(t);
             material.SetColor(property.propertyName, color);

@@ -1,0 +1,38 @@
+#include "./HLSL/PBRFunctions.hlsl"
+
+#pragma kernel PBRCubemapLUT
+#pragma kernel PBRBrdfLUT
+
+RWTexture2D<float4> _PBRCubemapLUT;
+RWTexture2D<float2> _PBRBrdfLUT;
+
+int _mipMapLevel;
+
+[numthreads(8,8,1)]
+void PBRCubemapLUT (uint3 id : SV_DispatchThreadID) {
+	float w, h;
+	_PBRCubemapLUT.GetDimensions(w, h);
+	// 以像素中心均匀分布
+	float2 coords = float2((id.x + 0.5f) / w , (id.y + 0.5f) / h);
+	//float2 coords = float2(id.x / (w - 1), id.y / (h - 1));
+	// 球坐标系转为笛卡尔直角坐标系 r=1
+	float phi = coords.x * 2 * PI;
+	float theta = (1 - coords.y) * PI;
+	float x = sin(theta) * cos(phi);
+	float y = cos(theta);
+	float z = sin(theta) * sin(phi);
+	float3 posDir = float3(x, y, z);
+	float4 prefilteredColor = CalculatePrefilteredColor(posDir, _mipMapLevel);
+	_PBRCubemapLUT[id.xy] = prefilteredColor;
+}
+
+
+[numthreads(8,8,1)]
+void PBRBrdfLUT (uint3 id : SV_DispatchThreadID) {
+	float w, h;
+	_PBRBrdfLUT.GetDimensions(w, h);
+	float2 coords = float2((id.x + 0.5f) / w, (id.y + 0.5f) / h);
+	//float2 coords = float2(id.x / (w - 1), id.y / (h - 1));
+	_PBRBrdfLUT[id.xy] = IntegrateBRDF(coords.x, coords.y);
+}
+

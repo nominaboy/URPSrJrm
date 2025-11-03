@@ -127,12 +127,12 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FinalCloudNoiseFactor: {r: 0.172, g: 0.136, b: 0.343, a: 0.868}
-    - _FowMaskScaleOffset: {r: 2.2, g: 2.2, b: 1, a: 0.12}
+    - _FowMaskScaleOffset: {r: 2.26, g: 2.2, b: 1, a: 0.12}
     - _ModifiedUVOffset: {r: 0, g: -5, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _TestVector: {r: 2.2, g: 0.00195, b: 1, a: 0.12}
     - _TestVector2: {r: 1, g: 0, b: 1, a: 1}
-    - _UVScaleOffset: {r: 257.1871, g: 257.1871, b: -350.3435, a: 230.8462}
+    - _UVScaleOffset: {r: 257.1871, g: 257.1871, b: -350.3, a: 230.8462}
   m_BuildTextureStacks: []
 --- !u!114 &8144530855115302980
 MonoBehaviour:

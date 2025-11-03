@@ -135,7 +135,7 @@ Material:
     - _DstBlendAlpha: 0
     - _DuskReflectionIntensity: 1
     - _EdgeFoamDepth: 1.51
-    - _EdgeFoamStep: 1.61
+    - _EdgeFoamStep: 1.68
     - _EnvironmentReflections: 1
     - _FoamSmoothTrans: 0.1
     - _FresnelFactor: 0.4

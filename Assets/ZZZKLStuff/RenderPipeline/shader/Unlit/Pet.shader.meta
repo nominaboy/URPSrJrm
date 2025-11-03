@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: aa61a028f782f11478546b3c17b75ef5
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _dotMap: {fileID: 2800000, guid: cfd9f920d6abdad46a41d53ad7a39a89, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

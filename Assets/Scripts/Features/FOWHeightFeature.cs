@@ -1,4 +1,3 @@
-using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -47,7 +46,7 @@ public class FOWHeightFeature : ScriptableRendererFeature {
                 ref CameraData cameraData = ref renderingData.cameraData;
 
                 cmd.SetViewProjectionMatrices(Matrix4x4.identity, Matrix4x4.identity);
-                cmd.DrawMesh(RenderingUtils.FullScreenMesh, Matrix4x4.identity, m_FOWHeightMaterial, 0, 0);
+                cmd.DrawMesh(JRMRenderingUtils.FullScreenMesh, Matrix4x4.identity, m_FOWHeightMaterial, 0, 0);
                 cmd.SetViewProjectionMatrices(cameraData.GetViewMatrix(), cameraData.GetProjectionMatrix());
                 cmd.SetGlobalTexture(RenderTextureNameUtils._FOWHeightRenderTexture, FOWHeightRTId);
 

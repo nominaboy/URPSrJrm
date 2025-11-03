@@ -6,7 +6,7 @@ Shader "JRMAdvanced/Easy1"
     }
     SubShader
     {
-        Tags { "Queue" = "Opaque" "LightMode" = "PlanarReflection"}
+        Tags { "Queue" = "Geometry" "LightMode" = "PlanarReflection"}
         Cull Back
         //Blend SrcAlpha OneMinusSrcAlpha
         //ZWrite Off
