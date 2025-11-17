@@ -1,4 +1,4 @@
-Shader "JRMAdvanced/SDFTemplate"
+Shader "Jeremy/SDF/SDFTemplate"
 {
     Properties
     {
@@ -109,7 +109,11 @@ Shader "JRMAdvanced/SDFTemplate"
                 return lerp(a, b, saturate(v));
             }
 
-
+            float sdfTrans1( float a, float b, float k )
+            {
+                float h = a-b;
+                return 0.5*( (a+b) - sqrt(h*h+k) );
+            }
 
 
             float4 render(float d, float3 color, float stroke) 
